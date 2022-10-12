@@ -1,0 +1,54 @@
+{{template "base" .}}
+
+{{define "content"}}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-3">
+                <h1 class="text-center mt-5">
+                    Search for Availability
+                </h1>
+                <form novalidate class="needs-validation" action="">
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="start_date" class="form-label">Starting Date</label>
+                                <input required type="date" class="form-control" id="start_date" name="start_date" aria-describedby="startDateHelp">
+                                <div id="startDateHelp" class="form-text">Enter your starting date YYYY-MM-DD</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="end_date" class="form-label">Starting Date</label>
+                                <input required type="date" class="form-control" id="end_date" name="end_date" aria-describedby="endDateHelp">
+                                <div id="endDateHelp" class="form-text">Enter your ending date YYYY-MM-DD</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Search Availability</button>
+                </form>
+            </div>
+        </div>
+
+        {{/* <div class="row">
+            <div class="col">
+                <p id="myParagraph">
+                    This is some text.
+                </p>
+                <p>
+                    <button id="colorButton" class="btn btn-outline-secondary">Click Me!</button>
+                </p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <p>
+                    <button id="colorButton2" class="btn btn-outline-secondary">Click Me!</button>
+                </p>
+            </div>
+        </div> */}}
+
+
+    </div>
+{{end}}

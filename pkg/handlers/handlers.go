@@ -50,3 +50,28 @@ func (m *Repository) About(w http.ResponseWriter, r *http.Request) {
 		StringMap: stringMap,
 	})
 }
+
+// Generals renders to make a generals page and display form
+func (m *Repository) Generals(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, "generals.page.gohtml", &models.TemplateData{})
+}
+
+// Majors renders to make a majors page and display form
+func (m *Repository) Majors(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, "majors.page.gohtml", &models.TemplateData{})
+}
+
+// Reservation renders to make a reservation page and display form
+func (m *Repository) Reservation(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, "make-reservation.page.gohtml", &models.TemplateData{})
+}
+
+// Availability renders to make a serch availability page and display form
+func (m *Repository) Availability(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, "search-availability.page.gohtml", &models.TemplateData{})
+}
+
+// Contact renders to make a contact page and display form
+func (m *Repository) Contact(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, "contact.page.gohtml", &models.TemplateData{})
+}
