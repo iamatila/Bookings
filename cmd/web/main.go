@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"github.com/alexedwards/scs/v2"
-	"github.com/iamatila/bookings/pkg/config"
-	"github.com/iamatila/bookings/pkg/handlers"
-	"github.com/iamatila/bookings/pkg/render"
+	"github.com/iamatila/bookings/internal/config"
+	"github.com/iamatila/bookings/internal/handlers"
+	"github.com/iamatila/bookings/internal/render"
 )
 
 var portNumber = ":0420"

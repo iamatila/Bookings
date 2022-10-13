@@ -7,23 +7,23 @@
                 <h1 class="text-center mt-5">
                     Search for Availability
                 </h1>
-                <form novalidate class="needs-validation" action="">
+                <form novalidate class="needs-validation" action="/search-availability" method="post">
+                    <input type="hidden" name="csrf_token" value="{{.CSRFToken}}">
                     <div class="row">
                         <div class="col">
-                            <div class="mb-3">
-                                <label for="start_date" class="form-label">Starting Date</label>
-                                <input required type="date" class="form-control" id="start_date" name="start_date" aria-describedby="startDateHelp">
-                                <div id="startDateHelp" class="form-text">Enter your starting date YYYY-MM-DD</div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="mb-3">
-                                <label for="end_date" class="form-label">Starting Date</label>
-                                <input required type="date" class="form-control" id="end_date" name="end_date" aria-describedby="endDateHelp">
-                                <div id="endDateHelp" class="form-text">Enter your ending date YYYY-MM-DD</div>
+                            <div class="row" id="reservation-dates">
+                                <div class="col">
+                                    <input required class="form-control" placeholder="Arrival" type="text" name="start">
+                                </div>
+                                {{/* <span>to</span> */}}
+                                <div class="col">
+                                    <input required class="form-control" placeholder="Departure" type="text" name="end">  
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <hr>
 
                     <button type="submit" class="btn btn-primary">Search Availability</button>
                 </form>
@@ -51,4 +51,13 @@
 
 
     </div>
+{{end}}
+
+{{define "js"}}
+    <script>
+        const elem = document.getElementById('reservation-dates');
+        const rangepicker = new DateRangePicker(elem, {
+            format: "yyyy-mm-dd",
+        }); 
+    </script>
 {{end}}
