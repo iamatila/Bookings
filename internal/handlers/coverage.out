@@ -1,0 +1,22 @@
+mode: set
+github.com/iamatila/bookings/internal/handlers/handlers.go:24.47,28.2 1 1
+github.com/iamatila/bookings/internal/handlers/handlers.go:31.33,33.2 1 1
+github.com/iamatila/bookings/internal/handlers/handlers.go:36.67,41.2 3 1
+github.com/iamatila/bookings/internal/handlers/handlers.go:44.68,56.2 5 1
+github.com/iamatila/bookings/internal/handlers/handlers.go:59.71,61.2 1 1
+github.com/iamatila/bookings/internal/handlers/handlers.go:64.69,66.2 1 1
+github.com/iamatila/bookings/internal/handlers/handlers.go:69.74,78.2 4 1
+github.com/iamatila/bookings/internal/handlers/handlers.go:81.78,83.16 2 1
+github.com/iamatila/bookings/internal/handlers/handlers.go:88.2,101.19 6 1
+github.com/iamatila/bookings/internal/handlers/handlers.go:112.2,114.66 2 1
+github.com/iamatila/bookings/internal/handlers/handlers.go:83.16,86.3 2 0
+github.com/iamatila/bookings/internal/handlers/handlers.go:101.19,110.3 4 0
+github.com/iamatila/bookings/internal/handlers/handlers.go:119.75,121.2 1 1
+github.com/iamatila/bookings/internal/handlers/handlers.go:124.79,129.2 3 1
+github.com/iamatila/bookings/internal/handlers/handlers.go:137.79,144.16 3 1
+github.com/iamatila/bookings/internal/handlers/handlers.go:148.2,151.14 3 1
+github.com/iamatila/bookings/internal/handlers/handlers.go:144.16,146.3 1 0
+github.com/iamatila/bookings/internal/handlers/handlers.go:155.70,157.2 1 1
+github.com/iamatila/bookings/internal/handlers/handlers.go:160.81,162.9 2 1
+github.com/iamatila/bookings/internal/handlers/handlers.go:169.2,176.4 4 0
+github.com/iamatila/bookings/internal/handlers/handlers.go:162.9,167.3 4 1
